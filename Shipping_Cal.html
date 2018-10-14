@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipping Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="maincontent">
+    <form class="shippingForm">
+        <h3>Shipping Calculator</h3>
+        <p>Please enter your distination to get qoute</p>
+        <div class="container">
+            <div class="toCountry">
+                <label for="country">From:</label>
+                <select id="country" name="country">
+                    <option value="australia">Kwait</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">Saudia Arabia</option>
+                </select>
+            </div>
+            <div class="toCountry">
+                <label for="country">To:</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">Saudia Arabia</option>
+                </select>
+            </div>
+            <div class="dims">
+                <label for="dims">Diminsions:</label>
+                <input type="text" id="l" name="width" placeholder="Width">
+                <input type="text" id="w" name="length" placeholder="Length">
+                <input type="text" id="h" name="hight" placeholder="Hight">
+            </div>
+            <div class="weight">
+                <label for="dims">Weight:</label>
+                <input type="text" id="weight" name="weight" placeholder="Weight">
+            </div>
+            <input type="submit" value="Calculate">
+        </div>
+    </form>
+    <form action="" class="singupForm">
+        <div class="input-form">
+            <input type="text" name="username" class="inputText" placeholder="Username">
+        </div>
+        <div class="input-form">
+            <input type="email" name="email" class="inputText" placeholder="User Email">
+        </div>
+        <div class="input-form">
+            <input type="password" name="password" class="inputText" placeholder="Password">
+        </div>
+        <div class="input-form">
+            <input type="password" name="conf-password" class="inputText" placeholder="Retype Password">
+        </div>
+        <div class="input-form">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+<script  src="http://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+</body>
+</html>

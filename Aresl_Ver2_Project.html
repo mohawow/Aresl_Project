@@ -1,0 +1,792 @@
+
+	<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Shipping with Ease</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://arsel1.com/xmlrpc.php" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg">
+	<link rel="apple-touch-icon" href="#"/>
+	<link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic' rel='stylesheet' type='text/css'>
+<script type="application/javascript">var QodeAjaxUrl = "https://arsel1.com/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="file:///Users/mohamed/Desktop/Arsel.html" />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/arsel1.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+/* calculator style */
+.shippingForm {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.block{
+    display: block !important;
+}
+.results{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.singupForm {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: none;
+		float: left;
+}
+input[type=text],input[type=email],input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+		text-align: left;
+}
+input[type=submit] {
+    width:100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+		float: left;
+		text-align: left;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+		float: left;
+		text-align: left;
+}
+select[name=country]{
+    padding: 10px;
+		float: left;
+		text-align: left;
+}
+/*  End of Calculator Style */
+</style>
+
+<!-- LINKS -->
+<link rel='stylesheet' id='contact-form-7-css'  href='https://arsel1.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-rtl-css'  href='https://arsel1.com/wp-content/plugins/contact-form-7/includes/css/styles-rtl.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css'  href='http://arsel1.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='default_style-css'  href='https://arsel1.com/wp-content/themes/arsel/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_font_awesome-css'  href='https://arsel1.com/wp-content/themes/arsel/css/font-awesome/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_font_elegant-css'  href='https://arsel1.com/wp-content/themes/arsel/css/elegant-icons/style.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_linea_icons-css'  href='https://arsel1.com/wp-content/themes/arsel/css/linea-icons/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-css'  href='https://arsel1.com/wp-content/themes/arsel/css/stylesheet.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_print-css'  href='https://arsel1.com/wp-content/themes/arsel/css/print.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mac_stylesheet-css'  href='https://arsel1.com/wp-content/themes/arsel/css/mac_stylesheet.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='webkit-css'  href='https://arsel1.com/wp-content/themes/arsel/css/webkit_stylesheet.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style_dynamic-css'  href='https://arsel1.com/wp-content/themes/arsel/css/style_dynamic.css?ver=1536497799' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://arsel1.com/wp-content/themes/arsel/css/responsive.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style_dynamic_responsive-css'  href='https://arsel1.com/wp-content/themes/arsel/css/style_dynamic_responsive.css?ver=1536497799' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://arsel1.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode-rtl-css'  href='https://arsel1.com/wp-content/themes/arsel/rtl.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_css-css'  href='https://arsel1.com/wp-content/themes/arsel/css/custom_css.css?ver=1536497799' type='text/css' media='all' />
+<link rel='stylesheet' id='childstyle-css'  href='https://arsel1.com/wp-content/themes/arsel-child/web/css/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style-rtl-css'  href='https://arsel1.com/wp-content/themes/arsel-child/web/css/style-rtl.css?ver=4.9.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://www.arsel1.com/index.php?rest_route=/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://arsel1.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://arsel1.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel="canonical" href="https://www.arsel1.com" />
+<link rel='shortlink' href='https://www.arsel1.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.arsel1.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fwww.arsel1.com" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.arsel1.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fwww.arsel1.com&#038;format=xml" />
+
+  <meta name="generator" content="WPML ver:3.7.1 stt:5,1;" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1515067000839{padding-top: 100px !important;}.vc_custom_1513171912647{padding-top: 100px !important;padding-right: 100px !important;padding-bottom: 0px !important;padding-left: 100px !important;}.vc_custom_1513166987794{padding-top: 70px !important;padding-bottom: 70px !important;}.vc_custom_1513166951172{padding-top: 100px !important;}.vc_custom_1513172890767{padding-top: 70px !important;padding-bottom: 70px !important;}.vc_custom_1513174300256{padding-bottom: 80px !important;}.vc_custom_1513171400980{padding-top: 100px !important;}.vc_custom_1513171400980{padding-top: 100px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+
+<!-- BODY  -->
+
+<body class="rtl home page-template page-template-full_width page-template-full_width-php page page-id-2  qode-title-hidden paspartu_enabled qode-child-theme-ver-1.0 qode-theme-ver-1.0 qode-theme-arsel wpb-js-composer js-comp-ver-5.4.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+	<div class="ajax_loader">
+		<div class="ajax_loader_1">
+			<div class="pulse">
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="wrapper_inner">
+
+<header class=" scroll_header_top_area dark fixed scrolled_not_transparent paspartu_header_alignment paspartu_header_inside menu_position_left page_header">
+    <div class="header_inner clearfix">
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 1);'>
+		<div class="header_inner_left">
+    	<div class="mobile_menu_button">
+            <span>
+                <i class="qode_icon_font_awesome fa fa-bars " ></i>
+             </span>
+        </div>
+		<div class="logo_wrapper">
+        	<div class="q_logo">
+			    <a itemprop="url" href="https://www.arsel1.com/">
+					<img itemprop="image" class="normal" src="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg" alt="Logo"/>
+					<img itemprop="image" class="light" src="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg" alt="Logo"/>
+					<img itemprop="image" class="dark" src="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg" alt="Logo"/>
+					<img itemprop="image" class="sticky" src="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg" alt="Logo"/>
+					<img itemprop="image" class="mobile" src="https://previews.123rf.com/images/betelgejze/betelgejze1511/betelgejze151100020/47876478-ilustraci%C3%B3n-plana-del-hombre-corriente-con-la-caja-postal-y-reloj-courier-con-el-paquete-vector-logo-pl.jpg" alt="Logo"/>
+				</a>
+		     </div>
+        </div>
+        </div>
+			<div class="header_inner_right">
+            <div class="side_menu_button_wrapper right">
+		    <div class="side_menu_button">
+			</div>
+            </div>
+		</div>
+
+<!-- MENU -->
+<nav class="main_menu drop_down left">
+	<ul id="menu-%d8%a7%d9%84%d9%82%d8%a7%d8%a6%d9%85%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9" class="">
+		<li id="nav-menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item active narrow"><a href="file:///Users/mohamed/Desktop/Arsel.html" class=" current ">
+		<i class="menu_icon blank fa"></i><span color:'black'>Home</span><span class="plus"></span></a></li>
+        <li id="nav-menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a href="#htw" class=""><i class="menu_icon blank fa"></i><span>How it works</span><span class="plus"></span></a></li>
+        <li id="nav-menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a href="#download" class=""><i class="menu_icon fa-download fa"></i><span>Get a Quote</span><span class="plus"></span></a></li>
+     </ul>
+</nav>
+<nav class="mobile_menu">
+    <ul id="menu-%d8%a7%d9%84%d9%82%d8%a7%d8%a6%d9%85%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9-1" class="">
+    	<li id="mobile-menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item active"><a href="file:///Users/mohamed/Desktop/Arsel.html" class=" current "><span>Home</span></a><span class="mobile_arrow">
+    	<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+        <li id="mobile-menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom ">
+        	<a href="#htw" class=""><span>How it works</span></a><span class="mobile_arrow">
+        	<i class="fa fa-angle-right"></i>
+        <i class="fa fa-angle-down"></i></span></li>
+        <li id="mobile-menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom ">
+            <a href="#download" class=""><span>Get a Quote</span></a><span class="mobile_arrow">
+         <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+    </ul>
+</nav>
+</div>
+</div>
+</div>
+
+</header>
+
+
+    <a id='back_to_top' href='#'>
+		<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+		</span>
+	</a>
+
+
+    <div class="paspartu_outer  disable_top_paspartu disable_bottom_paspartu">
+
+
+        <div class="paspartu_left"></div>
+        <div class="paspartu_right"></div>
+        <div class="paspartu_inner">
+
+<div class="content content_top_margin">
+	<div class="content_inner  ">
+		<div class="full_width">
+	        <div class="full_width_inner" >
+					<section   data-q_id="#info"    data-speed="1" class="parallax_section_holder  " style = " height:700px; background-image:url('http://s1.1zoom.net/big0/935/Hamburg_Germany_Marinas_Ships_Container_ship_518518_1280x720.jpg');">
+						<div class="parallax_content_full_width center"  style='padding: 0% 5%'><div class='parallax_section_inner_margin clearfix'>
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+						<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+						<div class="vc_row wpb_row section vc_row-fluid vc_inner  t-shadow" style=' text-align:left;'>
+						<div class=" full_section_inner clearfix">
+						<div class="wpb_column vc_column_container vc_col-sm-6">
+						<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+						</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6">
+						<div class="vc_column-inner vc_custom_1515067000839">
+						<div class="wpb_wrapper">
+						<div class="vc_empty_space"  style="height: 200px" ><span class="vc_empty_space_inner">
+			            <span class="empty_space_image"  ></span></span></div>
+
+<!-- Body Paragraph -->
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x40" style="text-align: left; color: #ffffff; background-color: #black;
+    opacity: .7; padding:5px ">Easiest way to ship your pacakges</h2>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 10px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: left; font-size: 18px; margin-top: 20px; background-color: black;
+    opacity: .7; padding:5px"><span style="color: #ffffff;">Sending packages with us is simple and gareenties<br />
+            Now you can send small or big items with affordable prices<br />
+            Our service is very reliable and we are trusted with thousands of customers<br />
+            Check out our calculator app to get quotes</span></p>
+
+		</div>
+	   </div> </div></div></div></div></div>
+	   <div class="vc_empty_space"  style="height: 100px" >
+	   	<span class="vc_empty_space_inner">
+		<span class="empty_space_image"  ></span>
+		</span></div>
+
+     <span data-type="normal" data-hover-icon-color="#ffffff" class="qode_icon_shortcode  q_font_awsome_icon fa-2x  " style=" "><a  itemprop="url" href="#htw" target="_self"><i class="qodef-icon-linea-icon icon-arrows-circle-down qode_icon_element" style="color: #ffffff;" ></i></a></span></div></div></div></div></div></section><div id="info"     class="vc_row wpb_row section vc_row-fluid " style='background-color:#ffffff; text-align:center;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-md vc_hidden-sm vc_col-xs-6 vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1513166987794"><div class="wpb_wrapper">
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper vc_box_border_grey">
+				<img width="325" height="338" src="https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png" class="vc_single_image-img attachment-large" alt="" srcset="https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 375w, https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 300w" sizes="(max-width: 375px) 100vw, 375px" />
+			</div>
+		</div>
+	</div>
+    </div></div></div>
+
+	<div class="wpb_column vc_column_container vc_col-sm-6">
+	   <div class="vc_column-inner vc_custom_1513166951172">
+		    <div class="wpb_wrapper">
+	            <div class="wpb_text_column wpb_content_element ">
+	             	<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-align: left; color: #222222; ">Pay online</h2>
+
+			<p style="text-align: left; font-size: 18px; margin-top: 20px;"><span style="color: #333333;">Choose your prefered method of payment</span></p>
+
+		</div>
+	</div> </div></div></div></div></div></div></div></div>
+
+	<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-md vc_hidden-sm vc_col-xs-6 vc_hidden-xs"><div class="vc_column-inner vc_custom_1513171912647">
+		<div class="wpb_wrapper">
+			<div class="wpb_text_column wpb_content_element ">
+				<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-align: left; color: #222222;">Different methods of shipping</h2>
+<p style="text-align: left; font-size: 18px; margin-top: 20px;"><span style="color: #333333;">Choose your method of Shipping <strong> Drop off and pick up</strong></span></p>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 20px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+			<!-- <div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img width="800" height="200" src="https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png" alt="" srcset="https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 800w, https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 300w, https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 768w, https://tenontours.com/wp-content/uploads/2016/04/Tenon-Budget-Icon.png 700w" sizes="(max-width: 800px) 100vw, 800px" /></div>
+		</div> -->
+	</div>
+</div></div></div></div></div><div id="info"     class="vc_row wpb_row section vc_row-fluid " style='background-color:#ffffff; text-align:center;'><div class=" full_section_inner clearfix" style='padding: 0% 5%'><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg"><div class="vc_column-inner vc_custom_1513172890767"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-center: right; color: #222222;">Pay online</h2>
+				<p style="text-align: center; font-size: 18px; margin-top: 20px;">
+					<span style="color: #333333;">Choose your best method of payment</span>
+				</p>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 20px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"></span>
+		</span></div>
+
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+		<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="375" height="338" src="https://png.pngtree.com/element_pic/00/00/00/00569f3a20d5c5a.jpg" class="vc_single_image-img attachment-large" alt="" srcset="https://arsel1.com/wp-content/uploads/2017/12/pay-cash-credit.png 375w, https://arsel1.com/wp-content/uploads/2017/12/pay-cash-credit-300x270.png 300w" sizes="(max-width: 375px) 100vw, 375px" /></div>
+		</div>
+	</div>
+	<div class="vc_empty_space"  style="height: 50px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-align: center; color: #222222;">Different ways of shipping</h2>
+<p style="text-align: center; font-size: 18px; margin-top: 20px;"><span style="color: #333333;">Choose your method of shipping<strong> Drop off or pick up</strong></span></p>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 20px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="800" height="200" src="https://png.pngtree.com/element_pic/00/00/00/00569f3a20d5c5a.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://arsel1.com/wp-content/uploads/2018/07/shipcr.png 800w, https://arsel1.com/wp-content/uploads/2018/07/shipcr-300x75.png 300w, https://arsel1.com/wp-content/uploads/2018/07/shipcr-768x192.png 768w, https://arsel1.com/wp-content/uploads/2018/07/shipcr-700x175.png 700w" sizes="(max-width: 800px) 100vw, 800px" /></div>
+		</div>
+	</div>
+</div></div></div></div></div><div id="htw"     class="vc_row wpb_row section vc_row-fluid  htw-bg hide-mobile" style='background-color:#ffffff; padding-top:120px; padding-bottom:120px; text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_col-xs-6 vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x50" style="text-align: center; color: #ffffff;">How it works</h2>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 50px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1920" height="1080" src="https://png.pngtree.com/element_pic/00/00/00/00569f3a20d5c5a.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333.png 1920w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333-300x169.png 300w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333-768x432.png 768w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333-1024x576.png 1024w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333-700x394.png 700w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5stepsSaudiPost333333333-539x303.png 539w" sizes="(max-width: 1920px) 100vw, 1920px" /></div>
+		</div>
+	</div>
+</div></div></div></div></div><div id="htw"     class="vc_row wpb_row section vc_row-fluid  hide-desktop" style='background-color:#ffffff; padding-top:120px; padding-bottom:120px; text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x50" style="text-align: center; color: #ff5722;">How it works</h2>
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 50px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="700" height="1052" src="https://png.pngtree.com/element_pic/00/00/00/00569f3a20d5c5a.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://arsel1.com/wp-content/uploads/2018/07/Arsel-5steps-Mobilev365864.png 700w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5steps-Mobilev365864-200x300.png 200w, https://arsel1.com/wp-content/uploads/2018/07/Arsel-5steps-Mobilev365864-681x1024.png 681w" sizes="(max-width: 700px) 100vw, 700px" /></div>
+		</div>
+	</div>
+</div></div></div></div></div><div id="download"     class="vc_row wpb_row section vc_row-fluid " style='background-color:#ffffff; padding-top:20px; padding-bottom:0px; text-align:center;'><svg class="angled-section svg-top" preserveAspectRatio="none" viewBox="0 0 86 86" width="100%" height="86"><polygon points="0,0 0,86 86,86" style="fill:#ffffff;" /></svg><div class=" full_section_inner clearfix" style='padding: 0% 5%'><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg"><div class="vc_column-inner vc_custom_1513174300256"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1102" height="1410" src="https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png" class="vc_single_image-img attachment-full" alt="" srcset="https://arsel1.com/wp-content/uploads/2018/07/PhoneApp65465465.png 1102w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 234w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 768w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 800w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 700w" sizes="(max-width: 1102px) 100vw, 1102px" /></div>
+		</div>
+	</div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner  vc_custom_1513171400980" style=' padding-top:100px; text-align:center;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-align: center; color: #ffffff;"><span style="color: #222222;">Affordable Prices</span></h2>
+
+		</div>
+	</div> <div class="separator  small center  " style="margin-top: 10px;margin-bottom: 20px;background-color: #aaaaaa;height: 1px;width: 30%;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #333333;">Save up to 70% of shipping</span>
+
+<!--Calculator Codes  -->
+<div class="maincontent">
+		<form class="shippingForm">
+				<h3>Shipping Calculator</h3>
+				<p>Please enter your distination to get qoute</p>
+				<div class="container">
+						<div class="toCountry vc_row wpb_row section vc_row-fluid vc_inner ">
+								<label for="country">From:</label>
+								<select id="country" name="country" >
+										<option value="australia" style="text-align:left">Kwait</option>
+										<option value="canada">Canada</option>
+										<option value="usa">USA</option>
+										<option value="usa">Saudia Arabia</option>
+								</select>
+						</div>
+						<div class="toCountry vc_row wpb_row section vc_row-fluid vc_inner ">
+								<label for="country">To:</label>
+								<select id="country" name="country">
+										<option value="australia">Australia</option>
+										<option value="canada">Canada</option>
+										<option value="usa">USA</option>
+										<option value="usa">Saudia Arabia</option>
+								</select>
+						</div>
+						<div class="dims">
+								<label for="dims">Diminsions:</label>
+								<input type="text" id="l" name="width" placeholder="Width" style="text-align:left">
+								<input type="text" id="w" name="length" placeholder="Length" style="text-align:left">
+								<input type="text" id="h" name="hight" placeholder="Hight" style="text-align:left">
+						</div>
+						<div class="weight">
+								<label for="dims">Weight:</label>
+								<input type="text" id="weight" name="weight" placeholder="Weight" style="text-align:left">
+						</div>
+						<input type="submit" value="Calculate">
+				</div>
+		</form>
+		<form action="" class="singupForm">
+				<div class="input-form">
+						<input type="text" name="username" class="inputText" placeholder="Username">
+				</div>
+				<div class="input-form">
+						<input type="email" name="email" class="inputText" placeholder="User Email">
+				</div>
+				<div class="input-form">
+						<input type="password" name="password" class="inputText" placeholder="Password">
+				</div>
+				<div class="input-form">
+						<input type="password" name="conf-password" class="inputText" placeholder="Retype Password">
+				</div>
+				<div class="input-form">
+						<input type="submit" value="Register">
+				</div>
+		</form>
+</div>
+
+
+<!-- Calculator Ends -->
+
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 40px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+</div></div></div></div></div>	<div class="vc_empty_space"  style="height: 60px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:center;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+
+	</div>
+</div></div></div></div></div>
+<div class="vc_row wpb_row section vc_row-fluid vc_inner " style=' padding-top:30px; text-align:center;'>
+<div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-4">
+<div class="vc_column-inner ">
+	<div class="wpb_wrapper">
+		<div class='q_icon_with_title small normal_icon right'>
+			<div class="icon_holder " style=" ">
+				<span data-icon-type="normal"   style="" class="qode_iwt_icon_holder q_font_awsome_icon fa-2x ">
+				<i class="qode_icon_font_awesome fa  qode_iwt_icon_element" style="color: #ff5722;" ></i></span></div>
+			<div class="icon_text_holder" style="">
+				<div class="icon_text_inner" style="">
+					<h5 class="icon_title" style="color: #ff5722;">Phone Number</h5>
+					     <p style='color: #333333'>1(800)555-5555</p></div></div></div></div></div></div>
+					     <div class="wpb_column vc_column_container vc_col-sm-4">
+					     	<div class="vc_column-inner ">
+					     		<div class="wpb_wrapper">
+					     		<div class='q_icon_with_title small normal_icon right'>
+					     			<div class="icon_holder " style=" ">
+					     			<span data-icon-type="normal"   style="" class="qode_iwt_icon_holder q_font_awsome_icon fa-2x ">
+					     				<i class="qode_icon_font_awesome fa  qode_iwt_icon_element" style="color: #ff5722;" ></i></span></div>
+					     				<div class="icon_text_holder" style="">
+
+					     				<div class="icon_text_inner" style="">
+					     					<h5 class="icon_title" style="color: #ff5722;">Email Address</h5><p style='color: #333333'>xyz@company.com</p></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4">
+					     					<div class="vc_column-inner "><div class="wpb_wrapper">
+
+<!-- FOOTER NOTES -->
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3 style="text-align: center;"><span style="color: #333333;">Questions and concerns</span></h3>
+            <h4 style="text-align: center;"><span style="color: #333333;">We are here to help</span></h4>
+
+		</div>
+	</div> </div></div></div></div></div></div></div></div></div></div>
+	<div class="vc_row wpb_row section vc_row-fluid  hide-mobile" style='background-color:#ffffff; padding-top:80px; padding-bottom:120px; text-align:center;'>
+	<svg class="angled-section svg-top" preserveAspectRatio="none" viewBox="0 0 86 86" width="100%" height="86">
+		<polygon points="0,0 0,86 86,86" style="fill:#ffffff;" /></svg>
+	<div class=" full_section_inner clearfix" style='padding: 0% 5%'>
+	<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-md vc_hidden-sm vc_col-xs-6 vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+				<img width="1102" height="1410" src="https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png" class="vc_single_image-img attachment-full" alt="" srcset="https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 1102w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 234w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 768w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 800w, https://store.cgduck.pro/image/cache/data/products/element_3d/Apple_iPhone_6_and_6_Plus_e3d/pic-00_0_600x600.png 700w" sizes="(max-width: 1102px) 100vw, 1102px" /></div>
+		</div>
+	</div>
+</div></div></div>
+
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-md vc_hidden-sm vc_col-xs-6 vc_hidden-xs" id="download"><div class="vc_column-inner ">
+	<div class="wpb_wrapper">
+		<div class="vc_row wpb_row section vc_row-fluid vc_inner  vc_custom_1513171400980" style=' padding-top:100px; text-align:center;'>
+			<div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12">
+				<div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="font-size-x30" style="text-align: center; color: #ffffff;">
+				<span style="color: #222222;">Reasonable Prices</span></h2>
+
+		</div>
+	</div>
+
+	<div class="separator  small center  " style="margin-top: 10px;margin-bottom: 20px;background-color: #aaaaaa;height: 1px;width: 30%;"></div>
+
+
+<!-- Calculator -->
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #333333;">Save up to 70% on your shippment</span></p>
+			<div class="maincontent">
+					<form class="shippingForm">
+							<h3>Shipping Calculator</h3>
+							<p>Please enter your distination to get qoute</p>
+							<div class="container">
+									<div class="toCountry">
+											<label for="country">From:</label>
+											<select id="country" name="country">
+													<option value="australia">Kwait</option>
+													<option value="canada">Canada</option>
+													<option value="usa">USA</option>
+													<option value="usa">Saudia Arabia</option>
+											</select>
+									</div>
+									<div class="toCountry">
+											<label for="country">To:</label>
+											<select id="country" name="country">
+													<option value="australia">Australia</option>
+													<option value="canada">Canada</option>
+													<option value="usa">USA</option>
+													<option value="usa">Saudia Arabia</option>
+											</select>
+									</div>
+									<div class="dims">
+											<label for="dims">Diminsions:</label>
+											<input type="text" id="l" name="width" placeholder="Width">
+											<input type="text" id="w" name="length" placeholder="Length">
+											<input type="text" id="h" name="hight" placeholder="Hight">
+									</div>
+									<div class="weight">
+											<label for="dims">Weight:</label>
+											<input type="text" id="weight" name="weight" placeholder="Weight">
+									</div>
+									<input type="submit" value="Calculate">
+							</div>
+					</form>
+					<form action="" class="singupForm">
+							<div class="input-form">
+									<input type="text" name="username" class="inputText" placeholder="Username">
+							</div>
+							<div class="input-form">
+									<input type="email" name="email" class="inputText" placeholder="User Email">
+							</div>
+							<div class="input-form">
+									<input type="password" name="password" class="inputText" placeholder="Password">
+							</div>
+							<div class="input-form">
+									<input type="password" name="conf-password" class="inputText" placeholder="Retype Password">
+							</div>
+							<div class="input-form">
+									<input type="submit" value="Register">
+							</div>
+					</form>
+			</div>
+<!-- Calculator ENDS -->
+		</div>
+	</div> 	<div class="vc_empty_space"  style="height: 40px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+</div></div></div></div></div>	<div class="vc_empty_space"  style="height: 60px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:center;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+
+	</div>
+</div></div></div></div></div>	<div class="vc_empty_space"  style="height: 32px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+	<div class="vc_empty_space"  style="height: 52px" ><span
+			class="vc_empty_space_inner">
+			<span class="empty_space_image"  ></span>
+		</span></div>
+
+<div class="vc_row wpb_row section vc_row-fluid vc_inner " style=' padding-top:30px; text-align:center;'>
+	<div class=" full_section_inner clearfix">
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner ">
+			<div class="wpb_wrapper">
+				<div class='q_icon_with_title small normal_icon right'>
+					<div class="icon_holder " style=" ">
+						<span data-icon-type="normal"   style="" class="qode_iwt_icon_holder q_font_awsome_icon fa-2x ">
+							<i class="qode_icon_font_awesome fa qode_iwt_icon_element" style="color: #ff5722;" ></i></span></div><div class="icon_text_holder" style="">
+								<div class="icon_text_inner" style="">
+									<h5 class="icon_title" style="color: #ff5722;">Phone Number</h5>
+									<p style='color: #333333'>800-555-5555</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wpb_column vc_column_container vc_col-sm-4">
+				<div class="vc_column-inner ">
+					<div class="wpb_wrapper">
+						<div class='q_icon_with_title small normal_icon right'>
+							<div class="icon_holder " style=" ">
+								<span data-icon-type="normal"   style="" class="qode_iwt_icon_holder q_font_awsome_icon fa-2x ">
+									<i class="qode_icon_font_awesome fa  qode_iwt_icon_element" style="color: #ff5722;" >
+									</i>
+								</span>
+							</div>
+							<div class="icon_text_holder" style="">
+								<div class="icon_text_inner" style="">
+									<h5 class="icon_title" style="color: #ff5722;">Email Address</h5>
+									<p style='color: #333333'>xyz@company.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wpb_column vc_column_container vc_col-sm-4">
+				<div class="vc_column-inner ">
+					<div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h3 style="text-align: center;"><span style="color: #333333;">Do you have question or concern</span></h3>
+<h4 style="text-align: center;"><span style="color: #333333;">We are here to assist</span></h4>
+
+		</div>
+	</div> </div></div></div></div></div></div></div></div></div></div>
+
+												</div>
+	</div>
+
+	</div>
+</div>
+
+            </div> <!-- paspartu_inner close div -->
+        </div> <!-- paspartu_outer close div -->
+
+
+
+</div>
+</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.arsel1.com\/index.php?rest_route=\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"https:\/\/arsel1.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/qode-like.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/wp-a11y.min.js?ver=4.9.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"\u0644\u0627 \u062a\u0648\u062c\u062f \u0646\u062a\u0627\u0626\u062c.","oneResult":"\u0646\u062a\u064a\u062c\u0629 \u0648\u0627\u062d\u062f\u0629 \u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u064a\u0647\u0627\u060c \u0627\u0633\u062a\u062e\u062f\u0645 \u0645\u0641\u0627\u062a\u064a\u062d \u0627\u0644\u0623\u0633\u0647\u0645 \u0644\u0644\u0623\u0639\u0644\u0649 \u0648\u0627\u0644\u0623\u0633\u0641\u0644 \u0644\u0644\u062a\u0635\u0641\u062d.","manyResults":"%d \u0646\u062a\u064a\u062c\u0629 \u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u064a\u0647\u0627\u060c \u0627\u0633\u062a\u062e\u062f\u0645 \u0645\u0641\u0627\u062a\u064a\u062d \u0627\u0644\u0623\u0633\u0647\u0645 \u0644\u0644\u0623\u0639\u0644\u0649 \u0648\u0627\u0644\u0623\u0633\u0641\u0644 \u0644\u0644\u062a\u0635\u0641\u062d.","itemSelected":"\u0627\u0644\u0639\u0646\u0635\u0631 \u062a\u0645 \u062a\u062d\u062f\u064a\u062f\u0647."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"\u0625\u063a\u0644\u0627\u0642","currentText":"\u0627\u0644\u064a\u0648\u0645","monthNames":["\u064a\u0646\u0627\u064a\u0631","\u0641\u0628\u0631\u0627\u064a\u0631","\u0645\u0627\u0631\u0633","\u0623\u0628\u0631\u064a\u0644","\u0645\u0627\u064a\u0648","\u064a\u0648\u0646\u064a\u0648","\u064a\u0648\u0644\u064a\u0648","\u0623\u063a\u0633\u0637\u0633","\u0633\u0628\u062a\u0645\u0628\u0631","\u0623\u0643\u062a\u0648\u0628\u0631","\u0646\u0648\u0641\u0645\u0628\u0631","\u062f\u064a\u0633\u0645\u0628\u0631"],"monthNamesShort":["\u064a\u0646\u0627\u064a\u0631","\u0641\u0628\u0631\u0627\u064a\u0631","\u0645\u0627\u0631\u0633","\u0623\u0628\u0631\u064a\u0644","\u0645\u0627\u064a\u0648","\u064a\u0648\u0646\u064a\u0648","\u064a\u0648\u0644\u064a\u0648","\u0623\u063a\u0633\u0637\u0633","\u0633\u0628\u062a\u0645\u0628\u0631","\u0623\u0643\u062a\u0648\u0628\u0631","\u0646\u0648\u0641\u0645\u0628\u0631","\u062f\u064a\u0633\u0645\u0628\u0631"],"nextText":"\u0627\u0644\u062a\u0627\u0644\u064a","prevText":"\u0627\u0644\u0633\u0627\u0628\u0642","dayNames":["\u0627\u0644\u0623\u062d\u062f","\u0627\u0644\u0625\u062b\u0646\u064a\u0646","\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621","\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621","\u0627\u0644\u062e\u0645\u064a\u0633","\u0627\u0644\u062c\u0645\u0639\u0629","\u0627\u0644\u0633\u0628\u062a"],"dayNamesShort":["\u0627\u0644\u0623\u062d\u062f","\u0627\u0644\u0623\u062b\u0646\u064a\u0646","\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621","\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621","\u0627\u0644\u062e\u0645\u064a\u0633","\u0627\u0644\u062c\u0645\u0639\u0629","\u0627\u0644\u0633\u0628\u062a"],"dayNamesMin":["\u062f","\u0646","\u062b","\u0623\u0631\u0628","\u062e","\u062c","\u0633"],"dateFormat":"d MM\u060c yy","firstDay":0,"isRTL":true});});
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/selectable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-bounce.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-clip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-drop.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-explode.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-fold.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-highlight.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-pulsate.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-size.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-scale.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-shake.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/jquery/ui/effect-transfer.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/plugins.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/jquery.carouFredSel-6.2.1.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/lemmon-slider.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/jquery.fullPage.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/jquery.mousewheel.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/jquery.touchSwipe.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.4.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/jquery.stretch.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/default_dynamic.js?ver=1536497799'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"https:\/\/arsel1.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/default.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/themes/arsel/js/custom_js.js?ver=1536497799'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.5'></script>
+<script type='text/javascript' src='https://arsel1.com/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"ar","icl_home":"http:\/\/www.arsel1.com","ajax_url":"https:\/\/arsel1.com\/wp-admin\/admin-ajax.php","url_type":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://arsel1.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.9.5'></script>
+
+<!-- JS code for Cal -->
+<script  src="http://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+<!--  -->
+</body>
+</html>
